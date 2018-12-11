@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:3000/</loc>
-    <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+    <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -115,7 +115,7 @@
   <url>
     <loc>http://localhost:3000/404</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -128,7 +128,7 @@
   <url>
     <loc>http://localhost:3000/atom.xml</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -141,7 +141,7 @@
   <url>
     <loc>http://localhost:3000/blog</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -154,7 +154,7 @@
   <url>
     <loc>http://localhost:3000/eig</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -167,7 +167,7 @@
   <url>
     <loc>http://localhost:3000/</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -180,7 +180,20 @@
   <url>
     <loc>http://localhost:3000/phd</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:3000/phd</loc>
+    
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -193,7 +206,7 @@
   <url>
     <loc>http://localhost:3000/previsecours</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -206,7 +219,7 @@
   <url>
     <loc>http://localhost:3000/projects</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -219,7 +232,7 @@
   <url>
     <loc>http://localhost:3000/sitemap.xml</loc>
     
-      <lastmod>2018-12-11T08:39:42+01:00</lastmod>
+      <lastmod>2018-12-11T21:23:37+01:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
