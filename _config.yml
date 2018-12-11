@@ -11,11 +11,11 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://tiphaine.github.io/
-baseurl: /
-title: Tiphaine Phe-Neau - Data Scientist
+url: http://tiphaine.github.io
+baseurl: /me/
+title: Tiphaine Phe-Neau - Data Scientist, PhD
 author: Tiphaine Phe-Neau
-description: Technical blog and resume
+description: Projects, technical blog and resume
 avatar: profile.png
 email: tiphaine@phe-neau.com
 github: tiphaine # username
