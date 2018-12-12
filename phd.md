@@ -18,10 +18,10 @@ I hold a M.Sc. in Networking obtained at [UPMC Sorbonne Universités](http://www
 
 ## PhD Dissertation
 
--	**Properties and Impact of Vicinity in Mobile Opportunistic Networks** (EN/FR),
+-	[**Properties and Impact of Vicinity in Mobile Opportunistic Networks** (EN/FR),
 	Tiphaine Phe-Neau,
 	UPMC Sorbonne Universités – Paris, France
-	January 2014
+	January 2014]({{ site.baseurl }}thesis.html)
 
 ## Publications
 

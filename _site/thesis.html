@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Tiphaine Phe-Neau" />
+    <meta name="description" content="Projects, technical blog and resume">
+    <link rel="favicon" href="static/img/favicon.ico">
+
+    
+      <title>Properties and Impact of Vicinity in Mobile Opportunistic Networks <br> T. Phe-Neau @ UPMC Sorbonne Université</title>
+    
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="previsecours.html">PREVISECOURS</a></li>
+        <li><a href="projects.html">TECH</a></li>
+        <li><a href="eig.html">EIG</a></li>
+        <li><a href="phd.html">PHD</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="index.html">ABOUT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container">
+	<div class="blog-post">
+		<h3>
+		  <strong><a href="/thesis">Properties and Impact of Vicinity in Mobile Opportunistic Networks <br> T. Phe-Neau @ UPMC Sorbonne Université</a></strong>
+		</h3>
+	</div>
+	<div class="blog-title">
+		<h4>
+		
+			&nbsp;&nbsp;
+			
+		</h4>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="blogpost">
+			  <p>Manuscript in <a href="http://tel.archives-ouvertes.fr/docs/00/95/78/64/PDF/these_archivage_2865518.pdf">PDF</a>.</p>
+
+<h2 id="slides">Slides</h2>
+
+<center><iframe src="http://www.slideshare.net/slideshow/embed_code/35515558" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></center>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>The market of mobile devices, such as smartphones, tablets, game stations, or laptops has exponentially grown over the latest years. When people carry such equipments along their daily commuting, they become mobile information vectors. They are able to carry, send, or receive information whenever they meet each other. The networking paradigm using such information vectors is known as disruption-tolerant networks (DTN) or opportunistic networks. Even if some of their properties are quite well known today, the relationship between a given node and its vicinity has not been thoroughly studied yet. In this thesis, we show how this closeness notion is a key ingredient to improve opportunistic network forwarding.</p>
+
+<p>We begin by identifying and investigating the binary assertion issue in opportunistic networks. We notice how most DTNs mainly analyze nodes that are in contact (at a topological 1-hop distance). This vision implies that all nodes that are not in contact, are in intercontact. Nevertheless, when two nodes are not in contact, this does not mean that they are topologically far away from one another. For instance, a 2- or 3-hop path may link them. Following this chain of thoughts, we propose a formal definition of vicinities in DTNs called “k-vicinity” and study the new resulting “contact/intercontact” temporal characterization. We show how extended temporal distributions differ from previous binary distributions.</p>
+
+<p>Then, we examine the internal organization of vicinities using the asynchronous vicinity motion (AVM) framework. We highlight movement types such as birth, death, and sequential moves. We analyze a number of their characteristics and extract vicinity usage directions for mobile networks. Based on the vicinity motion outputs and extracted directions, we build TiGeR (a synthetic TImeline GEneratoR) that simulates how pairs of nodes interact within their vicinities. Vicinity motion and TiGeR are able to take into account various types of networks to generate synthetic vicinity behaviors following similar patterns.</p>
+
+<p>Finally, we inquire about the possibilities of vicinity distance prediction. We expose a vicinity motion-based heuristic for pairwise shortest distance forecasting. We find that our heuristics perform quite well with performances up to 99% for the synchronous vicinity motion-based scheme and around 40% for the asynchronous one. We must note that these measures are enhanced by the fact that our heuristic often predicts infinite pairwise distances (i.e., pure intercontact) and most of the datasets we observe are mainly disconnected. Still, they are interesting indicators of whether two nodes are likely to be close in the future.</p>
+
+<h2 id="defense-committee">Defense committee</h2>
+<ul>
+  <li><a href="http://irt.enseeiht.fr/beylot/">André-Luc BEYLOT</a>, <em>Reviewer</em>, Professeur ENSEEIHT</li>
+  <li><a href="https://personnel.isae-supaero.fr/emmanuel-lochin/">Emmanuel LOCHIN</a>, <em>Reviewer</em>, Professeur ISAE</li>
+  <li><a href="https://sites.google.com/site/alinecviana/">Aline CARNEIRO VIANA</a>, <em>Examiner</em>, Chargée de Recherche -INRIA</li>
+  <li><a href="https://fr.linkedin.com/in/vaniaconan">Vania CONAN</a>, <em>Examiner</em>, Directeur de recherche, Thales</li>
+  <li><a href="https://www-npa.lip6.fr/~fladenmu/">Anne FLADENMULLER</a>, <em>Examiner</em>, Maître de Conférence UPMC</li>
+  <li><a href="https://complex.luxbulb.org/">Vincent GAUTHIER</a>, <em>Examiner</em>, Maître de Conférence Télécom SudParis</li>
+  <li><a href="https://www-npa.lip6.fr/~amorim/">Marcelo DIAS DE AMORIM</a>, <em>Advisor</em>, Directeur de recherche, CNRS &amp; UPMC</li>
+</ul>
+
+<h2 id="bibtex-entry">Bibtex Entry</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@PhDThesis{pheneau.thesis,
+author = {Phe-Neau, Tiphaine},
+title = {Properties and Impact of Vicinity in Mobile Opportunistic Networks},
+school = {UPMC Sorbonne Universités},
+year = {2014},
+}
+</code></pre></div></div>
+
+
+			   <hr>
+			   <div class="related-posts">
+				   <h5>Related Posts</h5>
+				   
+			   </div>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+            <a href="http://www.github.com/jekyller/sustain">sustain</a> with ♥</p>
+        </div>
+    </div>
+</footer>
+<div class="footer"></div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="static/js/docs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
