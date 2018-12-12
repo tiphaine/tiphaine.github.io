@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Tiphaine Phe-Neau" />
+    <meta name="description" content="Projects, technical blog and resume">
+    <link rel="favicon" href="static/img/favicon.ico">
+
+    
+      <title>Jekyll install on  macOS High Sierra (10.16.3)</title>
+    
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="previsecours.html">PREVISECOURS</a></li>
+        <li><a href="projects.html">TECH</a></li>
+        <li><a href="eig.html">EIG</a></li>
+        <li><a href="phd.html">PHD</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="index.html">ABOUT ME</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container">
+	<div class="blog-post">
+		<h3>
+		  <strong><a href="/jekyll.html">Jekyll install on  macOS High Sierra (10.16.3)</a></strong>
+		</h3>
+	</div>
+	<div class="blog-title">
+		<h4>
+		December 11, 2018
+			&nbsp;&nbsp;
+			
+			 <span class="label label-success">Jekyll</span>
+			
+			 <span class="label label-success">Core</span>
+			
+			 <span class="label label-success">Post</span>
+			
+			 <span class="label label-success">TLDR</span>
+			
+		</h4>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="blogpost">
+			  <p><a href="https://jekyllrb.com/">Jekyll</a> is static site generator written in Ruby by Tom Preston-Werner. I used it for projects like <a href="https://tiphaine.github.io/previsecours.html">Prévisecours</a> and realized that <strong>static pages</strong> and the <strong>Markdown</strong> syntax would allow me to blog more about my technical findings. So, I decided to move my homepage from Wordpress to Jekyll on Github pages with the <a href="https://github.com/jekyller/sustain">Sustain theme</a>.</p>
+
+<p>Some would prefer <a href="https://gohugo.io/">Hugo</a> but I’m more into Jekyll right now because of the <a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">Github compatibility</a> and the available themes.</p>
+
+<p>One of Jekyll’s main issue is installation, so here is how I made <strong>Jekyll work on MAC OS High Sierra</strong>.</p>
+
+<h3 id="jekyll-installation">Jekyll installation</h3>
+
+<ul>
+  <li>Open a Terminal (Applications &gt; Utilities &gt; Terminal)</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/terminal.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Install xcode if you don’t have it yet</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ xcode-select --install
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install <a href="https://brew.sh/">Homebrew</a> (a free and open-source software package management system for macOS)</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run this script to install <code class="highlighter-rouge">ruby-build</code> and <code class="highlighter-rouge">rbenv</code> packages (I adapted it from <a href="https://github.com/jekyll/jekyll/issues/6637">@DirtyF’s</a> to get the latest <code class="highlighter-rouge">rbenv</code> version)</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ bash setup-rbenv.sh
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<pre><code> #!/bin/bash
+	
+set -ex
+brew update
+brew install rbenv ruby-build
+rbenv install 2.5.3
+rbenv global 2.5.3
+ruby -v
+gem install jekyll bundler
+rbenv rehash
+	
+if ! type rbenv | grep function; then
+  echo 'if which rbenv &gt; /dev/null; then eval "$(rbenv init -)"; fi' &gt;&gt; ~/.bash_profile
+fi
+	
+set +x
+echo "Done! Close and reopen your terminal"
+</code></pre>
+
+<p>Script code: <a href="https://gist.github.com/tiphaine/d3e53acbb1a20c0a102e20d0a5793d71"><code class="highlighter-rouge">setup-rbenv.sh</code></a></p>
+
+<ul>
+  <li>
+    <p>After, check your ruby install</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ ruby -v
+  ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-darwin17]
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Install bundler and jekyll gems</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ gem install jekyll bundler
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Check your jekyll version</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ jekyll -v
+  jekyll 3.8.5
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>You can now use jekyll on your local system.</p>
+
+<h3 id="run-jekyll-to-generate-your-static-website">Run Jekyll to generate your static website</h3>
+
+<ul>
+  <li>
+    <p>Choose your own Jekyll theme and clone/unzip it on your computer (for example in the <code class="highlighter-rouge">my-website</code> directory):</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  $ mkdir my-website
+  $ cd my-website
+  $ unzip chosen-jekyll-theme.zip
+  $ bundle exec jekyll serve
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Your new local version of your new website should be up and running at this adress (copy paste it on your favorite browser): <code class="highlighter-rouge">http://localhost:4000</code>.</p>
+  </li>
+</ul>
+
+<p>You can now customize and create content for your new site.</p>
+
+<h3 id="host-it-on-github-pages">Host it on Github pages</h3>
+
+<ul>
+  <li>
+    <p>To host your newly created website on Github, you just have to push the directory as a new repos using your favorite Github application our CLI.</p>
+  </li>
+  <li>
+    <p>Go online on the Github repo to the Settings tab</p>
+  </li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-settings.png" alt="" /></p>
+
+<ul>
+  <li>Go to the section below</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-page-base.png" alt="" /></p>
+
+<ul>
+  <li>Select the <code class="highlighter-rouge">master branch</code> and Save</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-pages-choose-branch.png" alt="" /></p>
+
+<ul>
+  <li>You should get this</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-page-to-be-published.png" alt="" /></p>
+
+<ul>
+  <li>Within a few minutes, reload the page and your site should be published</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-pages-published.png" alt="" /></p>
+
+<ul>
+  <li>Now you have your new page online ! Enjoy !</li>
+</ul>
+
+<p><img src="../static/img/posts/2018-12-11-jekyll/github-pages-my-website.png" alt="" /></p>
+
+<p><strong>Personal note</strong>: I found this feature to be amazing for quickly putting up documentation about new projects and to spread them quickly around !</p>
+
+
+			   <hr>
+			   <div class="related-posts">
+				   <h5>Related Posts</h5>
+				   
+			   </div>
+			</div>
+		</div>
+	</div>
+	
+
+</div>
+
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+            <a href="http://www.github.com/jekyller/sustain">sustain</a> with ♥</p>
+        </div>
+    </div>
+</footer>
+<div class="footer"></div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="static/js/docs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ layout: post
 title: PhD thesis
 ---
 
-In January 2014, I defended my Ph.D. in Computer Science: *“Properties and Impact of Vicinity in Mobile Opportunistic Networks”* in the Networks and Performance Analysis (NPA) team at the Laboratoire d’Informatique de Paris 6 (LIP6) from UPMC Sorbonne Universités in Paris. You can find the manuscript below. I worked under the supervision of [Dr Marcelo Dias de Amorim](https://www-npa.lip6.fr/~amorim/) and in collaboration with [Dr Vania Conan](https://fr.linkedin.com/in/vaniaconan) from Thales Communications & Security.
+In January 2014, I defended my Ph.D. in Computer Science: *“Properties and Impact of Vicinity in Mobile Opportunistic Networks”* in the Networks and Performance Analysis (NPA) team at the [Laboratoire d’Informatique de Paris 6 (LIP6)](http://www.lip6.fr) from [UPMC Sorbonne Universités](http://www.upmc.fr/) in Paris. You can find the manuscript below. I worked under the supervision of [Dr Marcelo Dias de Amorim](https://www-npa.lip6.fr/~amorim/) and in collaboration with [Dr Vania Conan](https://fr.linkedin.com/in/vaniaconan) from Thales Communications & Security.
 
 My research interests involved:
 
@@ -11,7 +11,10 @@ My research interests involved:
 + Intercontact Characterization in Mobile Networks
 + Wireless and Pervasive Systems
 
-I hold a M.Sc. in Networking obtained at [UPMC Sorbonne Universités](http://www.upmc.fr/) (2010) and a [B.Sc. in Mathematics and Computer Science from Université Paris Descartes](http://www.univ-paris5.fr/) (2008). I share my time between the [LIP6](http://www.lip6.fr)/ and the [Laboratory of Information, Network and Communication Sciences (LINCS)](http://www.lincs.fr/) which is a collaboration between [INRIA](http://www.inria.fr/), [Institut Telecom](http://www.institut-telecom.fr/), [UPMC Sorbonne Universités](http://www.upmc.fr/) and Alcatel-Lucent.
+I hold a M.Sc. in Networking obtained at [UPMC Sorbonne Universités](http://www.upmc.fr/) (2010) and a B.Sc. in Mathematics and Computer Science from [Université Paris Descartes](http://www.univ-paris5.fr/) (2008). I share my time between the [LIP6](http://www.lip6.fr) and the [Laboratory of Information, Network and Communication Sciences (LINCS)](http://www.lincs.fr/) which is a collaboration between [INRIA](http://www.inria.fr/), [Institut Telecom](http://www.institut-telecom.fr/), [UPMC Sorbonne Universités](http://www.upmc.fr/) and Alcatel-Lucent.
+
+
+<center><b>I am grateful for this period, that is when I really <br>started loving large scale data analysis and crunching <3 </b></center>
 
 ## PhD Dissertation
 
