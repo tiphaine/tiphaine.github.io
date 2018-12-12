@@ -7,7 +7,7 @@ Manuscript in [PDF](http://tel.archives-ouvertes.fr/docs/00/95/78/64/PDF/these_a
 
 ## Slides
 
-<center><iframe src="http://www.slideshare.net/slideshow/embed_code/35515558" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></center>
+<center><script async class="speakerdeck-embed" data-id="b71d86da78244f32bc5c4dc17f8aeb85" data-ratio="1.41436464088398" src="//speakerdeck.com/assets/embed.js"></script></center>
 
 
 
