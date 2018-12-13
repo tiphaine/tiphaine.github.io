@@ -53,4 +53,26 @@ layout: null
     {% endif %}
   </url>
   {% endfor %}
+  {% for talk in site.talks %}
+    <url>
+      <loc>{{ site.url }}{{ talk.url }}</loc>
+      {% if talk.sitemap.lastmod %}
+        <lastmod>{{ talk.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+      {% elsif talk.date %}
+        <lastmod>{{ talk.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if talk.sitemap.changefreq %}
+        <changefreq>{{ talk.sitemap.changefreq }}</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      {% if talk.sitemap.priority %}
+        <priority>{{ talk.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
+    </url>
+  {% endfor %}
 </urlset>
